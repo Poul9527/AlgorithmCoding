@@ -1,12 +1,7 @@
 package algorithm;
 
-import com.sun.org.apache.bcel.internal.generic.SWAP;
-import org.apache.commons.lang.StringUtils;
-
 import java.util.Arrays;
-import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicReference;
-import java.util.stream.Collectors;
 
 public class QuickSort {
     public static void quickSort(int[] arr, int low, int high) {

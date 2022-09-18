@@ -1,10 +1,12 @@
 package HWOd;
 
+import java.util.*;
+
 /**
  * @author skpeng
  * @version 1.0
  * @description 题目描述
- *
+ * <p>
  * 某系统中有众多服务，每个服务用字符串（只包含字母和数字，长度<=10）唯一标识，服务间可能有依赖关系，如A依赖B，则当B故障时导致A也故障。
  * 依赖具有传递性，如A依赖B，B依赖C，当C故障时导致B故障，也导致A故障。
  * 给出所有依赖关系，以及当前已知故障服务，要求输出所有正常服务。
@@ -33,10 +35,44 @@ package HWOd;
  * ,
  * 说明
  * a1依赖a2，a2故障导致a1也故障，没有正常节点，输出一个逗号。
- *
  * @date 2022/9/10
  */
 public class JudgeServiceWorking {
-
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String s = sc.nextLine();
+        String s1 = sc.nextLine();
+        String[] arr = s.split(",");
+        String[] arr1 = s1.split(",");
+        List<String> values = new LinkedList<>();
+        for (String s2 : arr1) {
+            values.add(s2);
+        }
+        Set<String> result = new LinkedHashSet<>();
+        for (String param : arr) {
+            String before = param.substring(0, 2);
+            String after = param.substring(3);
+            if (values.contains(after)) {
+                if (!values.contains(before)) {
+                    values.add(before);
+                }
+            } else {
+                result.add(after);
+                if (values.contains(before) && result.contains(before)) {
+                    result.remove(before);
+                }
+            }
+        }
+        String sResult = "";
+        if (result.size() == 0) {
+            sResult = ",";
+        } else {
+            for (String s2 : result) {
+                sResult += "," + s2;
+            }
+            sResult = sResult.substring(1);
+        }
+        System.out.println(sResult);
+    }
 
 }

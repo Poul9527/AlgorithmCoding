@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding" defaultCharsetForPropertiesFiles="GBK">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/resource/note/note0.md" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Bag01.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/HWOd/CityDP.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/HWOd/IPEffective.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/HWOd/Main104.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/HWOd/Main105.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/HWOd/Main88.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Honor01.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/Huiwennumber.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/MatrixMultiply.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/MatrixMultiply.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Package0_1.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/algorithm/QuickSort.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/thread/CallableTest.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/thread/CasDemo.java" charset="GBK" />
@@ -11,5 +20,6 @@
     <file url="file://$PROJECT_DIR$/src/thread/Pool.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/thread/Race.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/thread/ThreadPoolExecutorDemo.java" charset="GBK" />
+    <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

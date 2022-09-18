@@ -1,14 +1,14 @@
 import java.util.Scanner;
 
 /**
- * ÈÙÒ«±ÊÊÔÌâ
- * 0abcdefgh½âÎöÖ®ºóµÄ´ó¶Ë×Ö·û´®Îªhgfedcba,1abcdefgh½âÎöÖ®ºóµÄ´ó¶Ë×Ö·û´®Îªabcdefgh
- * µÚÒ»ÐÐÊäÈëÒ»¸öÊý×Ö£¬´ú±í×Ö·û´®ÓÐ¶àÉÙ×é±àÂë
- * µÚ¶þÐÐÊäÈëÒ»¸ö×Ö·û´®£¬´ó¶ËºÍÐ¡¶Ë£¬9¸ö×Ö·ûÎªÒ»¸ö±àÂë×é
- * ÀýÊäÈë
+ * è£è€€ç¬”è¯•é¢˜
+ * 0abcdefghè§£æžä¹‹åŽçš„å¤§ç«¯å­—ç¬¦ä¸²ä¸ºhgfedcba,1abcdefghè§£æžä¹‹åŽçš„å¤§ç«¯å­—ç¬¦ä¸²ä¸ºabcdefgh
+ * ç¬¬ä¸€è¡Œè¾“å…¥ä¸€ä¸ªæ•°å­—ï¼Œä»£è¡¨å­—ç¬¦ä¸²æœ‰å¤šå°‘ç»„ç¼–ç 
+ * ç¬¬äºŒè¡Œè¾“å…¥ä¸€ä¸ªå­—ç¬¦ä¸²ï¼Œå¤§ç«¯å’Œå°ç«¯ï¼Œ9ä¸ªå­—ç¬¦ä¸ºä¸€ä¸ªç¼–ç ç»„
+ * ä¾‹è¾“å…¥
  * 2
  * 0abcdefgh1abcdefgh
- * Êä³öhgfedcba abcdefgh
+ * è¾“å‡ºhgfedcba abcdefgh
  */
 public class Honor01 {
 

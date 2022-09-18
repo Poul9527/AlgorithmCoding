@@ -7,11 +7,11 @@ public class Package0_1 {
         int[] value = {15, 20, 30};
         int bagWeight = 4;
 
-        // ³õÊ¼»¯
+        // åˆå§‹åŒ–
         int[] dp = new int[bagWeight + 1];
         dp[0] = 0;
-        for (int i = 0; i < weight.length; i++) { // ±éÀúÎïÆ·
-            for (int j = bagWeight; j >= weight[i]; j--) { // ±éÀú±³°üÈİÁ¿
+        for (int i = 0; i < weight.length; i++) { // éå†ç‰©å“
+            for (int j = bagWeight; j >= weight[i]; j--) { // éå†èƒŒåŒ…å®¹é‡
                 dp[j] = Math.max(dp[j], dp[j - weight[i]] + value[i]);
             }
         }
@@ -30,17 +30,17 @@ public class Package0_1 {
         int[] value = {15, 20, 30};
         int bagWeight = 4;
 
-        // ¶şÎ¬Êı×é
+        // äºŒç»´æ•°ç»„
         int[][] dp = new int[weight.length + 1][bagWeight + 1];
 
-        // ³õÊ¼»¯
+        // åˆå§‹åŒ–
         for (int j = weight[0]; j <= bagWeight; j++) {
             dp[0][j] = value[0];
         }
 
-        // weightÊı×éµÄ´óĞ¡ ¾ÍÊÇÎïÆ·¸öÊı
-        for (int i = 1; i < weight.length; i++) { // ±éÀúÎïÆ·
-            for (int j = 0; j <= bagWeight; j++) { // ±éÀú±³°üÈİÁ¿
+        // weightæ•°ç»„çš„å¤§å° å°±æ˜¯ç‰©å“ä¸ªæ•°
+        for (int i = 1; i < weight.length; i++) { // éå†ç‰©å“
+            for (int j = 0; j <= bagWeight; j++) { // éå†èƒŒåŒ…å®¹é‡
                 if (j < weight[i]) {
                     dp[i][j] = dp[i - 1][j];
                 } else {
