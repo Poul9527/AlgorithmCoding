@@ -1,7 +1,9 @@
+package common;
+
 import java.util.*;
 
 public class Test05 {
-//¶«½ø¼¼Êõ¹«Ë¾±ÊÊÔ
+//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë¾ï¿½ï¿½ï¿½ï¿½
 
     public static void main(String[] args) {
         List<long[]> list = removNb(26);
@@ -18,7 +20,7 @@ public class Test05 {
                 return new Long(o1[0]).compareTo(new Long(o2[0]));
             }
         });
-        // ×ªlambda±í´ïÊ½
+        // ×ªlambdaï¿½ï¿½ï¿½Ê½
         Collections.sort(list, (long[] o1, long[] o2) -> {
             return new Long(o1[0]).compareTo(new Long(o2[0]));
         });
@@ -30,7 +32,7 @@ public class Test05 {
         System.out.println(Arrays.toString(list.toArray()));
     }
 
-    // Çë°´ÄãµÄÊµ¼ÊÐèÇóÐÞ¸Ä²ÎÊý
+    // ï¿½ë°´ï¿½ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Þ¸Ä²ï¿½ï¿½ï¿½
     public static List<long[]> removNb(long n) {
         List<long[]> list = new ArrayList();
         long[] arr = new long[2];

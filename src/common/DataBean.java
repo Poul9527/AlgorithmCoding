@@ -1,3 +1,5 @@
+package common;
+
 public class DataBean {
 
     private String h;

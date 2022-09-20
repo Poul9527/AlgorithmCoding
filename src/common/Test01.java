@@ -1,10 +1,6 @@
-import com.sun.scenario.effect.Merge;
+package common;
 
-import java.net.URLDecoder;
-import java.net.URLEncoder;
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 public class Test01 {
 
@@ -50,11 +46,11 @@ public class Test01 {
     }
 
     /**
-     * ´úÂëÖĞµÄÀàÃû¡¢·½·¨Ãû¡¢²ÎÊıÃûÒÑ¾­Ö¸¶¨£¬ÇëÎğĞŞ¸Ä£¬Ö±½Ó·µ»Ø·½·¨¹æ¶¨µÄÖµ¼´¿É
-     * ½«¸ø¶¨Êı×éÅÅĞò
+     * ä»£ç ä¸­çš„ç±»åã€æ–¹æ³•åã€å‚æ•°åå·²ç»æŒ‡å®šï¼Œè¯·å‹¿ä¿®æ”¹ï¼Œç›´æ¥è¿”å›æ–¹æ³•è§„å®šçš„å€¼å³å¯
+     * å°†ç»™å®šæ•°ç»„æ’åº
      *
-     * @param arr intÕûĞÍÒ»Î¬Êı×é ´ıÅÅĞòµÄÊı×é
-     * @return intÕûĞÍÒ»Î¬Êı×é
+     * @param arr intæ•´å‹ä¸€ç»´æ•°ç»„ å¾…æ’åºçš„æ•°ç»„
+     * @return intæ•´å‹ä¸€ç»´æ•°ç»„
      */
     public static int[] MySort(int[] arr) {
         // write code here
@@ -71,8 +67,8 @@ public class Test01 {
             arrb[j] = temp;
         }
         Integer.toHexString(11).toUpperCase(); //A
-        Integer.toBinaryString(11);//¶ş½øÖÆ
-        Integer.toOctalString(1);// ·µ»Ø½øÖÆ
+        Integer.toBinaryString(11);//äºŒè¿›åˆ¶
+        Integer.toOctalString(1);// è¿”å›è¿›åˆ¶
         return arrb;
     }
 }

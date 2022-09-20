@@ -1,3 +1,5 @@
+package common;
+
 public class MatrixMultiply {
 
 /*   现有a数组长度为100，b数据长度为1000000，请编写一种或者多种代码请求b 和 a矩阵相乘的总和,

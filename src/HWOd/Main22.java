@@ -1,6 +1,8 @@
+package HWOd;
+
 import java.util.*;
 
-public class Main04 {
+public class Main22 {
 
     public Set<String> correctServer(List<String> list, List<String> errorList) {
         Set<String> severSet = new HashSet<>();

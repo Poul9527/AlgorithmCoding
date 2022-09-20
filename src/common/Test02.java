@@ -1,22 +1,24 @@
+package common;
+
 import java.util.BitSet;
 import java.util.Scanner;
 
 public class Test02 {
 
     /*
-     *  ÌâÄ¿£º½«Ò»¸öÕıÕûÊı·Ö½âÖÊÒòÊı
-     *  ÖÊÒòÊı¾ÍÊÇÄÜ¹»±»¸ÃÕıÕûÊıÕû³ıµÄÖÊÊı
+     *  é¢˜ç›®ï¼šå°†ä¸€ä¸ªæ­£æ•´æ•°åˆ†è§£è´¨å› æ•°
+     *  è´¨å› æ•°å°±æ˜¯èƒ½å¤Ÿè¢«è¯¥æ­£æ•´æ•°æ•´é™¤çš„è´¨æ•°
      */
     public static void main(String args[]) {
         Scanner in = new Scanner(System.in);
-        System.out.println("ÇëÊäÈëÒª·Ö½âÖÊÒòÊıµÄÕıÕûÊı£º");
+        System.out.println("è¯·è¾“å…¥è¦åˆ†è§£è´¨å› æ•°çš„æ­£æ•´æ•°ï¼š");
         int numInput = in.nextInt();
         factor(numInput);
     }
 
-    //·Ö½âÖÊÒòÊı
+    //åˆ†è§£è´¨å› æ•°
     public static void factor(int num) {
-        System.out.print("·Ö½âµÄ½á¹ûÎª£º");
+        System.out.print("åˆ†è§£çš„ç»“æœä¸ºï¼š");
         for (int i = 2; i <= Math.sqrt(num); i++) {
             if (num % i == 0) {
                 System.out.print(i + "*");

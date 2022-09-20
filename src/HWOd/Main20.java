@@ -1,6 +1,8 @@
+package HWOd;
+
 import java.util.Scanner;
 
-public class Main {
+public class Main20 {
 
     public static int changeIpv4(String str) {
         String result = "";

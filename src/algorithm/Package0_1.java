@@ -1,3 +1,7 @@
+package algorithm;
+
+import algorithm.Bag01;
+
 import java.util.Arrays;
 
 public class Package0_1 {

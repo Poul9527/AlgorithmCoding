@@ -1,3 +1,5 @@
+package common;
+
 import java.text.SimpleDateFormat;
 import java.util.*;
 import java.util.function.Function;

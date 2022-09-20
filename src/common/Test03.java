@@ -1,3 +1,5 @@
+package common;
+
 public class Test03 {
     public static String changeFormatNumber(String number) {
         if (number == null || number.length() <= 0) {
@@ -7,7 +9,7 @@ public class Test03 {
         if (nc[0] != '-' && !Character.isDigit(nc[0])) {
             return "INPUTERROR";
         }
-        // ÅÐ¶ÏÊÇ·ñ·Ç·¨
+        // åˆ¤æ–­æ˜¯å¦éžæ³•
         int i = 0, flag = 0;
         if (nc[0] == '-') {
             flag = 1;
@@ -22,7 +24,7 @@ public class Test03 {
         try {
             Integer ans = Integer.parseInt(number);
             if(ans > 32767 || ans < -32767) {
-                // Ô½½ç
+                // è¶Šç•Œ
                 return "NODATA";
             }
             String binary = Integer.toBinaryString(ans);
@@ -35,7 +37,7 @@ public class Test03 {
                 }
             }
             builder.append(binary + ",");
-            // ×ª16½øÖÆ
+            // è½¬16è¿›åˆ¶
             String hex = Integer.toHexString(ans).toUpperCase();
             if (hex.length() > 4) {
                 hex = hex.substring(hex.length() - 4);

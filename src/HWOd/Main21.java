@@ -1,6 +1,8 @@
+package HWOd;
+
 import java.util.*;
 
-public class Main02 {
+public class Main21 {
 
     public int minCount(List<Integer> list) {
         list.sort((Integer in1, Integer in2) -> {
@@ -48,6 +50,6 @@ public class Main02 {
             int inta = Integer.valueOf(a);
             list.add(inta);
         }
-        System.out.println(new Main02().minCount(list));
+        System.out.println(new Main21().minCount(list));
     }
 }
