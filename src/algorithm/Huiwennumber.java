@@ -1,5 +1,4 @@
 package algorithm;
-
 /**
  * 9. 回文数
  * 给你一个整数 x ，如果 x 是一个回文整数，返回 true ；否则，返回 false 。
@@ -41,7 +40,9 @@ public class Huiwennumber {
 
     public static void main(String[] args) {
         System.out.println(isHuwenNumber(1234567899));
+//        System.out.println(isPalindrome("A man, a plan, a canal: Panama"));
     }
+
 
     // 正确解法
     public boolean isPalindrome(int x) {
@@ -80,4 +81,6 @@ public class Huiwennumber {
         // 由于处于中位的数字不影响回文（它总是与自己相等），所以我们可以简单地将其去除。
         return x == revertedNumber || x == revertedNumber / 10;
     }
+
+
 }

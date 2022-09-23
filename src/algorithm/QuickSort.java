@@ -11,20 +11,20 @@ public class QuickSort {
         }
         i = low;      // i=0,j=arr.length 13
         j = high;
-        //temp¾ÍÊÇ»ù×¼Î»
+        //tempå°±æ˜¯åŸºå‡†ä½
         temp = arr[low];    // arr[0] 10
 
 //        int[] arr = {10, 7, 2, 4, 7, 62, 3, 4, 2, 1, 8, 9, 19};
         while (i < j) {
-            //ÏÈ¿´ÓÒ±ß£¬ÒÀ´ÎÍù×óµİ¼õ
+            //å…ˆçœ‹å³è¾¹ï¼Œä¾æ¬¡å¾€å·¦é€’å‡
             while (temp <= arr[j] && i < j) {
                 j--;    //12
             }
-            //ÔÙ¿´×ó±ß£¬ÒÀ´ÎÍùÓÒµİÔö
+            //å†çœ‹å·¦è¾¹ï¼Œä¾æ¬¡å¾€å³é€’å¢
             while (temp >= arr[i] && i < j) {
                 i++;    //1
             }
-            //Èç¹ûÂú×ãÌõ¼şÔò½»»»
+            //å¦‚æœæ»¡è¶³æ¡ä»¶åˆ™äº¤æ¢
             if (i < j) {
                 t = arr[j];     //9
                 arr[j] = arr[i];    //7
@@ -32,13 +32,13 @@ public class QuickSort {
             }
 
         }
-        //×îºó½«»ù×¼ÎªÓëiºÍjÏàµÈÎ»ÖÃµÄÊı×Ö½»»»
+        //æœ€åå°†åŸºå‡†ä¸ºä¸iå’Œjç›¸ç­‰ä½ç½®çš„æ•°å­—äº¤æ¢
 
         arr[low] = arr[i];
         arr[i] = temp;
-        //µİ¹éµ÷ÓÃ×ó°ëÊı×é
+        //é€’å½’è°ƒç”¨å·¦åŠæ•°ç»„
         quickSort(arr, low, j - 1);
-        //µİ¹éµ÷ÓÃÓÒ°ëÊı×é
+        //é€’å½’è°ƒç”¨å³åŠæ•°ç»„
         quickSort(arr, j + 1, high);
     }
 
@@ -52,11 +52,11 @@ public class QuickSort {
             System.out.println(arr[i]);
         }*/
         Arrays.stream(arr).forEach(ss ->System.out.print(ss + ","));
-        //×ÔĞıËø
+        //è‡ªæ—‹é”
         Thread thread = Thread.currentThread();
         AtomicReference atomicReference = new AtomicReference();
-        while (!atomicReference.compareAndSet(null, thread)) { }    //cas¼ÓËø
-        atomicReference.compareAndSet(thread, null);    //cas½âËø
+        while (!atomicReference.compareAndSet(null, thread)) { }    //casåŠ é”
+        atomicReference.compareAndSet(thread, null);    //casè§£é”
 
         System.out.println(System.currentTimeMillis() - start + "----" + arr.length);
     }
