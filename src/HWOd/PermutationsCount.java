@@ -7,7 +7,7 @@ package HWOd;
  * 1706400
  * @date 2022/9/22
  */
-public class MainAllArray {
+public class PermutationsCount {
 
     public static int result = 0;
 
